@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jacobe Suissa</title>
+  <meta name="description" content="Get in touch with Jacobe Suissa." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Jacobe Suissa</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="theatre.html">Theatre</a></li>
+      <li><a href="visual.html">Visual</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <div class="section-label fade-in">Contact</div>
+
+    <h2 class="fade-in">Get<br><em>in touch</em></h2>
+
+    <hr class="divider fade-in" />
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start;" class="fade-in">
+
+      <div>
+        <p style="margin-bottom: 2rem;">
+          For bookings, collaborations, press enquiries, or anything else — reach out directly.
+        </p>
+
+        <!-- Replace with your actual email -->
+        <div style="margin-bottom: 2rem;">
+          <h3>Email</h3>
+          <a href="mailto:hello@jacobbe.dk" style="font-size: 1rem; text-decoration: none; border-bottom: 1px solid var(--border);">hello@jacobbe.dk</a>
+        </div>
+
+        <div>
+          <h3>Elsewhere</h3>
+          <div class="music-links" style="flex-direction: column; align-items: flex-start;">
+            <!-- Replace # with your actual social links -->
+            <a href="#" class="music-link" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" class="music-link" target="_blank" rel="noopener">Spotify</a>
+            <a href="#" class="music-link" target="_blank" rel="noopener">Bandcamp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional contact form — this version just opens the mail client -->
+      <!-- For a working form you'd need a service like Formspree or Netlify Forms -->
+      <div>
+        <h3 style="margin-bottom: 1.5rem;">Send a message</h3>
+        <!-- Using Formspree — replace YOUR_FORM_ID with your actual Formspree form ID -->
+        <!-- Sign up free at formspree.io, create a form, and paste the ID here -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <p style="font-size: 0.75rem; color: var(--muted); margin-top: 1rem;">
+          Or write directly to <a href="mailto:hello@jacobbe.dk" style="color: var(--muted);">hello@jacobbe.dk</a>
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Jacobe Suissa</p>
+    <div class="footer-links">
+      <a href="music.html">Music</a>
+      <a href="theatre.html">Theatre</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
